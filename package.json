@@ -1,0 +1,21 @@
+{
+  "name": "financial-tool-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev:watch": "npx electronmon --trace-warnings ."
+  },
+  "keywords": [
+    "electron",
+    "reactjs",
+    "typescript"
+  ],
+  "author": "SK",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^25.3.2"
+  }
+}
