@@ -1,8 +1,9 @@
 const {app, BrowserWindow} = require('electron');
 const url = require('url')
 const path = require('path');
-const { createECDH } = require('crypto');
+const { start } = require('repl');
 
+// to start npm run dev:watch
 
 function createMainWindow(){
     const mainWindow = new BrowserWindow({
@@ -12,7 +13,7 @@ function createMainWindow(){
     });
 
     const startUrl = url.format({
-        pathname: path.join(__dirname, 'index.html'),
+        pathname: path.join(__dirname, './app/build/index.html'),
         protocol: 'file',
     })
 
